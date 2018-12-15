@@ -1,3 +1,6 @@
+from . import views
+from django.urls import include
+
 """checklist URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +20,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('', views.home),
     path('admin/', admin.site.urls),
+    path('login/', include("signin.urls")),
 ]

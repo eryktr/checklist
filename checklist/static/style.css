@@ -1,0 +1,10 @@
+.full_height {
+    height: 100vh;
+}
+
+
+#header {
+    font-size: 60 px;
+    background-color: aqua;
+    color: black;
+}
