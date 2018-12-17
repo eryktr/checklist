@@ -6,10 +6,16 @@
 
     <body>
         <div class="container-fluid"> 
-            <h1 class="text-center"> Sign In </h1> 
-            <form>
-                {{form}}
+            <h1 class="text-center"> Sign In </h1>
+            <a href="../#"><h4 class="text-center">Home</h4> </a> 
+            <form method="POST">
+                <table>
+                {% csrf_token %}
+                {{form.as_table}}
+                </table>
+                <input type="submit" class="btn btn-primary" value="Sign in" />
             </form>
+            
         </div>
     </body>
 </html>

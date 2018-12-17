@@ -7,9 +7,15 @@
     <body>
         <div class="container-fluid"> 
             <h1 class="text-center"> Sign Up </h1> 
-            <form method="POST">
-                {{form}}}
+            <a href="../#"><h4 class="text-center">Home</h4> </a>
+            <form method="POST" action="#">
+                <table>
+                    {% csrf_token %}
+                    {{form.as_table}}
+                </table>
+                <input type="submit" value="Sign up"class = "btn btn-primary"/>
             </form>
+            
         </div>
     </body>
 </html>
