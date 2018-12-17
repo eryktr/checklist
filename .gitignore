@@ -23,7 +23,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-checklist/myenv
+myenv
 MANIFEST
 
 # PyInstaller
